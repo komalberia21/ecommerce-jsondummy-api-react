@@ -3,7 +3,7 @@ import "./Product.css";
 import { useEffect,useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
 import { cartActions } from "../../redux/cartSlice";
-import{toast} from "react-taostify";
+import{toast} from "react-toastify";
 
 const Product = () => {
   const dispatch=useDispatch();
