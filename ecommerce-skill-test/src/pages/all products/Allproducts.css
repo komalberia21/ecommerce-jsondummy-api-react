@@ -1,0 +1,10 @@
+.all-products-edit{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    margin:0 auto;
+
+}

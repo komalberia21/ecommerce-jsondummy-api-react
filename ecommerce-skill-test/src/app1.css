@@ -1,0 +1,13 @@
+#root {
+    max-width: 1700px;
+    margin: 0 auto;
+    
+    text-align: center;
+  }
+
+
+.app-react{
+   display: flex;
+   flex-direction: column;
+   gap:10px;
+}

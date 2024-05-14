@@ -1,0 +1,68 @@
+.add-products {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 15px;
+    display:flex;
+    flex-direction: column;
+    
+  }
+  
+  .form-item-add {
+    display: flex;
+    flex-direction: column;
+    }
+  .form-wrapper{
+    display: flex;
+    gap:50px;
+  }
+.form-group-add {
+    margin-bottom: 20px;
+  }
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-first,.form-second{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  
+  .category,
+  .stock {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .category label,
+  .stock label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  

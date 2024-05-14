@@ -1,0 +1,40 @@
+.all-pro-card{
+    display: flex;
+align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.all-left{
+    display: flex;
+    /* object-fit: contain; */
+ 
+    padding:0.8rem;
+}
+.all-right{
+    width:50%;
+    font-size: 1.3rem;
+    
+}
+.all-title{
+    font-weight: 700;
+    color:rgb(8, 84, 225); ;
+}
+.all-btn{
+    display: flex;
+    gap:9px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+input{
+    border:none;
+    height:50px;
+    font-weight: 600;
+    font-size:1.5rem
+}
