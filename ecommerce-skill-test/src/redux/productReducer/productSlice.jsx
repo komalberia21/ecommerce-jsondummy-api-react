@@ -5,10 +5,13 @@ export const getInitialStateAsync=createAsyncThunk("products/getInitialState",as
   thunkAPI.dispatch(fetchStart())
  try{
       const response = await fetch(
-        "http://localhost:3000/products"
+        "https://dummyjson.com/products"
       );
+      //https:localhost:3000/products
+      
       const data = await response.json();
-      thunkAPI.dispatch(setInitialState(data));
+      //console.log(data.products,"data")
+      thunkAPI.dispatch(setInitialState(data.products));
       return data;
       }catch(e){
         fetcherror(e);

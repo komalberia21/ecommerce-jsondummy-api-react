@@ -22,7 +22,7 @@ const Product = () => {
 
  useEffect(()=>{
     async function fetchproduct(){
-     const response= await fetch(`http://localhost:3000/products/${id}`);
+     const response= await fetch(`https://dummyjson.com/products/${id}`);
     const res= await response.json();
      setProduct(res);
     setcartValue({

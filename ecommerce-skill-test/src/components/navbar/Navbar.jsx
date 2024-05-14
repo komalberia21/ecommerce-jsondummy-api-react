@@ -9,7 +9,7 @@ const Navbar = () => {
   const[openCart,setopenCart]=useState(false);
   const cartitems=useSelector((state)=>state.cartReducer.cart);
   const cartLength=cartitems&&cartitems.length;
-  console.log(cartLength,"length");
+  //console.log(cartLength,"length");
 
   return (
     <div className="navbar">

@@ -18,9 +18,11 @@ const Cart = () => {
       autoClose:1000
     });
 }
+
 //function to increase quantity
 const handleIncrease=(id)=>{
-  dispatch(cartActions.editcartInc(id))
+  dispatch(cartActions.editcartInc(id));
+
 }
 //function to dec quantity
 const handleDecrease=(id,quantity)=>{
@@ -44,7 +46,7 @@ return (
               </div>
               <div className="cart-details">
                 <p>{item.title}</p>
-                <p>Price:{item.price}</p>
+                <p>Price:{item.price*item.quantity}</p>
                 <div onClick={()=>handledelete(item.id)}><AiOutlineDelete size={24} color="red" /></div>
               </div>
               <div className="cart-inc">

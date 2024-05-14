@@ -7,7 +7,7 @@ import {toast} from "react-toastify";
 
 const Hero = () => {
   const dispatch = useDispatch();
-  console.log("inside hero");
+  //console.log("inside hero");
   let fetchedproducts=useSelector((state)=>state.products.items);
   const fetched=fetchedproducts;
    const[products,setProducts]=useState([]);
@@ -18,15 +18,18 @@ const Hero = () => {
     if(products.length==0){
   dispatch(getInitialStateAsync());
   setProducts(fetchedproducts);
+  
     }
    }, [dispatch,products,fetchedproducts]);
 
    const sortByPrice= async () => {
     if(sortby){
   try {
-      const response = await fetch("http://localhost:3000/products?_sort=price");
+      const response = await fetch("https://dummyjson.com/products?_sort=price");
+      //http://localhost:3000/products?_sort=price
       const res = await response.json();
-      setProducts(res);
+      const data=res.products
+      setProducts(data);
       toast.success("Products sorted",{
         autoClose:1000
       })
